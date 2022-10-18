@@ -8,8 +8,8 @@ self.addEventListener('install',(event)=>{
     const promiseCache = caches.open(STATIC_CACHE_NAME).then((cache) => {
         return cache.addAll(
             [
-                '/practica7/',
-                '/practica7/index.html',
+                './',
+                './index.html',
 
                 
 
@@ -25,9 +25,6 @@ self.addEventListener('install',(event)=>{
                 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js',
                 'http://as01.epimg.net/img/comunes/fotos/fichas/equipos/large/1.png',
                 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css',
-                'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/webfonts/fa-solid-900.ttf',
-                'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/webfonts/fa-solid-900.woff2'
-
                 
             ]
         );
